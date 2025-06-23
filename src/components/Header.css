@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-list {
+    margin-left: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    color: var(--text-secondary);
+   
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-img {
+    display: block;
+    width: 30px;
+}
+
+.nav-close {
+        display: none;
+    }
+
+@media (max-width: 800px) {
+
+.nav-menu {
+    margin-left: auto;
+    display: block;
+    z-index: 1000;
+}
+
+.nav-list {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-menu-show {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 2000;
+    opacity: 1;
+    pointer-events: unset;
+}
+
+.nav-close {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 21px;
+        width: 30px;
+}
+
+}

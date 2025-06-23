@@ -1,0 +1,145 @@
+.about-section {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+    padding: 5rem 12.5rem;
+    
+}
+
+
+.about-me-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.about-me-title {
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 3rem;
+}
+
+.about-me-description {
+    font-size: 1.15rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.7; 
+}
+
+.about-me-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    justify-content: center;
+}
+
+.stat {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+
+.about-me-features {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.feature h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    }
+
+.feature p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 5rem 2rem;
+  }
+
+  .about-me-title {
+    font-size: 2rem;
+}
+  
+  .about-stats {
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .about-features {
+    gap: 1.5rem;
+  }
+
+  .feature {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-stats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+}
