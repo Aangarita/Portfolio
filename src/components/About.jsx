@@ -9,7 +9,7 @@ export function About () {
           <h2 className='about-me-title'>Acerca de mí</h2>
           <p className='about-me-description'>
             Soy un desarrollador web full stack apasionado por crear soluciones 
-            tecnológicas innovadoras. Con más de 3 años de experiencia en el desarrollo 
+            tecnológicas innovadoras. Con más de 6 meses de experiencia en el desarrollo 
             de aplicaciones web modernas, me especializo en JavaScript, React, Node.js 
             y tecnologías relacionadas.
           </p>
@@ -22,11 +22,11 @@ export function About () {
         </div>
         <div className='about-me-stats'>
           <div className='stat'>
-            <span className='stat-number'>2+</span>
+            <span className='stat-number'>1+</span>
             <span className='stat-label'>Proyectos completados</span>
           </div>
           <div className='stat'>
-            <span className='stat-number'>1+</span>
+            <span className='stat-number'>1</span>
             <span className='stat-label'>Años de Experiencia</span>
           </div>
         </div>
@@ -69,10 +69,9 @@ export function About () {
               <line x1="12" y1="17" x2="12" y2="21"/>
             </svg>
           </div>
-          <h3>DevOps & Deployment</h3>
+          <h3>Manejo de versiones</h3>
           <p>
-            Despliegue en la nube, CI/CD, Docker y optimización de 
-            rendimiento para aplicaciones escalables.
+            Versionamiento en Git y Github.
           </p>
         </div>
       </div>

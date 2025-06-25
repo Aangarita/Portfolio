@@ -1,67 +1,69 @@
 import './Projects.css'
 
+
 export function Projects () {
 
 const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "Plataforma de comercio electrónico completa con carrito de compras, sistema de pagos y panel de administración.",
-      image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "#",
+      title: "Carrito de compras",
+      description: "Aplicación web desarrollada con React que simula una tienda virtual. Permite agregar productos al carrito, visualizar la cantidad seleccionada y calcular el total en tiempo real. Cada producto se muestra con imagen, nombre y precio, y cuenta con botón para añadir al carrito. Ideal para practicar componentes reutilizables, manejo de eventos y lógica de negocio en aplicaciones de e-commerce.",
+      image: "https://addonmall.com/assets/uploads/2020/08/widget-carrito.png",
+      technologies: ["React", "JavaScript", "HTML", "CSS"],
+      githubUrl: "https://github.com/Aangarita/Carrito-de-compras",
+      liveUrl: "#",
+      featured: true
+      
+    },
+    {
+      id: 2,
+      title: "Pokedex",
+      description: "Aplicación web que consume la PokéAPI para mostrar una Pokédex dinámica con información detallada de los Pokémon. Permite explorar y buscar criaturas por nombre y cuenta con un sistema de filtrado por tipo, lo que mejora la experiencia del usuario al facilitar la navegación y clasificación. Desarrollada con JavaScript, enfocada en el consumo de APIs REST y la manipulación del DOM.",
+      image: "https://user-images.githubusercontent.com/22878736/133997220-41182022-03cf-4697-ac0c-2e7a38a35c93.png",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/Aangarita/Pokedex",
       liveUrl: "#",
       featured: true
     },
     {
-      id: 2,
-      title: "Task Management App",
-      description: "Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y notificaciones.",
-      image: "https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Firebase", "CSS3"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
-    },
-    {
       id: 3,
-      title: "Weather Dashboard",
-      description: "Dashboard del clima con pronósticos detallados, mapas interactivos y alertas meteorológicas personalizadas.",
-      image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Vue.js", "API Integration", "Chart.js"],
-      githubUrl: "#",
+      title: "Rick and Morty App",
+      description: "Aplicación web que consume la API pública de Rick and Morty para mostrar una galería interactiva de personajes. Cada tarjeta incluye el nombre y la imagen del personaje, permitiendo una visualización limpia y ordenada. Este proyecto demuestra el manejo de peticiones HTTP, renderizado dinámico de contenido y diseño responsivo. Ideal para practicar consumo de APIs REST y manipulación del DOM con JavaScript.",
+      image: "https://codesandbox.io/api/v1/sandboxes/tmn67/screenshot.png",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/Aangarita/Rick-and-Morty-App",
       liveUrl: "#",
       featured: false
     },
     {
       id: 4,
-      title: "Social Media Analytics",
-      description: "Herramienta de análisis de redes sociales con métricas en tiempo real y reportes automatizados.",
-      image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "D3.js", "Express", "PostgreSQL"],
-      githubUrl: "#",
+      title: "To Do List App",
+      description: "Aplicación de tareas desarrollada con JavaScript, que permite agregar, eliminar y marcar tareas como completadas. Incluye un sistema de filtros que permite al usuario visualizar todas las tareas, solo las completadas o solo las pendientes. Cada tarea puede ser tachada con un clic y eliminada de forma individual. Es una práctica sólida de manipulación del DOM, control de estado y lógica condicional en interfaces interactivas.",
+      image: "https://lh7-us.googleusercontent.com/zMSspy5Iv3RTp8JZUDgzgGGzOLPWb-5hmaZfKcFZnS774kRz_jjH9FxTkTDN7nrGAS6Wi1vr3YrHTRGX_MC23C7aHSI6-Ag67UzC8FWTmKi9PlYYZMPwkB9YDb34rFXOHeO73wa19ODIa8pJSWhco8I",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/Aangarita/Lista-Tareas",
       liveUrl: "#",
       featured: true
     },
     {
       id: 5,
-      title: "Portfolio Website",
-      description: "Sitio web personal con diseño moderno, optimizado para SEO y con sistema de blog integrado.",
-      image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["Next.js", "Tailwind CSS", "Contentful"],
-      githubUrl: "#",
+      title: "Reto FAQ",
+      description: "Proyecto inspirado en un reto de Frontend Mentor. Se trata de un componente de preguntas frecuentes (FAQ) con diseño responsive y funcionalidad interactiva: al hacer clic en cada pregunta, se despliega su respuesta de forma elegante. El proyecto demuestra el uso de HTML, CSS moderno y JavaScript para manipulación del DOM y animaciones básicas. Es ideal para mostrar comprensión en diseño de UI, estructuras semánticas y lógica de interacción.",
+      image: "https://foolishdeveloper.com/wp-content/uploads/2022/02/Simple-FAQ-Section-using-javascript.jpg",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      githubUrl: "https://github.com/Aangarita/FAQs",
       liveUrl: "#",
       featured: false
     },
     {
       id: 6,
-      title: "Learning Management System",
-      description: "Sistema de gestión de aprendizaje con cursos interactivos, evaluaciones y seguimiento de progreso.",
-      image: "https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=800",
-      technologies: ["React", "Node.js", "Socket.io", "MySQL"],
+      title: "Formulario de Contacto",
+      description: "Formulario de contacto con validación de campos desarrollado con HTML, CSS y JavaScript. Incluye campos requeridos como nombre, correo electrónico, tipo de consulta, mensaje y consentimiento, con diseño responsivo y accesible. La validación se realiza tanto visual como funcionalmente, evitando el envío de datos incompletos. Es un ejercicio práctico de formularios modernos, enfoque en experiencia de usuario (UX) y validaciones personalizadas en el frontend.",
+      image: "https://i.ytimg.com/vi/rxrXzJqkdW0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDWbb1304efiz5VLxqpiHxUXC3k0w",
+      technologies: ["HTML", "CSS", "JavaScript"],
       githubUrl: "#",
       liveUrl: "#",
-      featured: true
+      featured: false
     }
   ]
 
