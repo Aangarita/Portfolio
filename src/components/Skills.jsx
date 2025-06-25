@@ -25,8 +25,6 @@ const skillCategories = [
       title: "Herramientas",
       skills: [
         { name: "Git"},
-        { name: "Docker"},
-        { name: "AWS"},
         { name: "Figma"}
       ]
     }
