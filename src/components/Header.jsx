@@ -11,7 +11,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
 
 const menuItems = [
     {id: 'home', label: 'Inicio'},
-    {id: 'about', label: 'Sobre mí'},
+    {id: 'about', label: 'Acerca de'},
     {id: 'skills', label: 'Habilidades'},
     {id: 'projects', label: 'Proyectos'},
     {id: 'contact', label: 'Contacto'}

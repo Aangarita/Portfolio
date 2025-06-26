@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
+  color-scheme: light;
+}
+
+
+:root {
   --primary-color: #2563eb;
   --secondary-color: #1e293b;
   --accent-color: #f59e0b;
